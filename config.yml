@@ -1,29 +1,39 @@
-my_task:          # Part 1: Task Name
-  # Part 2: Login Information
+deluge:
   client: deluge
   host: 127.0.0.1:58846
   username: pppppp
   password: BB123123
-  # Part 3: Strategies Block (Remove Conditions)
   strategies:
-    strategy1:
-      all_trackers: true
+    all:
       seeding_time: 22100
+      free_space:
+        min: 100
+        path: /home/pppppp/deluge/download/
+        action: remove-inactive-seeds
 
-  # Part 4: Decide whether to remove and delete data (optional)
+    delete_by_error:
+      status:
+        - Error
+      create_time: 3600
+
   delete_data: true
 
-my_task1:          # Part 1: Task Name
-  # Part 2: Login Information
+qbittorrent:
   client: qbittorrent
   host: http://127.0.0.1:2017
   username: pppppp
   password: BB123123
-  # Part 3: Strategies Block (Remove Conditions)
   strategies:
-    strategy1:
-      all_trackers: true
-      seeding_time: 36600
+    all:
+      seeding_time: 22100
+      free_space:
+        min: 150
+        path: /home/pppppp/deluge/download/
+        action: remove-inactive-seeds
 
-  # Part 4: Decide whether to remove and delete data (optional)
+    delete_by_error:
+      status: Error
+      create_time: 3600
+ 
+
   delete_data: true
