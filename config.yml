@@ -1,14 +1,14 @@
 deluge:
   client: deluge
   host: 127.0.0.1:58846
-  username: pppppp
-  password: BB123123
+  username: dddd
+  password: dddd1111
   strategies:
     all:
       seeding_time: 22100
       free_space:
         min: 100
-        path: /home/pppppp/deluge/download/
+        path: /home/dddd/deluge/download/
         action: remove-inactive-seeds
 
     delete_by_error:
@@ -21,14 +21,14 @@ deluge:
 qbittorrent:
   client: qbittorrent
   host: http://127.0.0.1:2017
-  username: pppppp
-  password: BB123123
+  username: dddd
+  password: dddd1111
   strategies:
     all:
       seeding_time: 22100
       free_space:
         min: 150
-        path: /home/pppppp/deluge/download/
+        path: /home/dddd/deluge/download/
         action: remove-inactive-seeds
 
     delete_by_error:
