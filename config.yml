@@ -2,13 +2,13 @@ deluge:
   client: deluge
   host: 127.0.0.1:58846
   username: dddd
-  password: dddd1111
+  password: dddd1234
   strategies:
     all:
       seeding_time: 22100
       free_space:
         min: 100
-        path: /home/dddd/deluge/download/
+        path: /home/dddd/qbittorrent/download
         action: remove-inactive-seeds
 
     delete_by_error:
@@ -22,13 +22,13 @@ qbittorrent:
   client: qbittorrent
   host: http://127.0.0.1:2017
   username: dddd
-  password: dddd1111
+  password: dddd1234
   strategies:
     all:
       seeding_time: 22100
       free_space:
         min: 150
-        path: /home/dddd/deluge/download/
+        path: /home/dddd/qbittorrent/download
         action: remove-inactive-seeds
 
     delete_by_error:
