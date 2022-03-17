@@ -8,7 +8,7 @@ deluge:
       seeding_time: 22100
       free_space:
         min: 100
-        path: /home/dddd/qbittorrent/download
+        path: /home/dddd/torrents/qbittorrent/
         action: remove-inactive-seeds
 
     delete_by_error:
@@ -28,7 +28,7 @@ qbittorrent:
       seeding_time: 22100
       free_space:
         min: 150
-        path: /home/dddd/qbittorrent/download
+        path: /home/dddd/torrents/qbittorrent/
         action: remove-inactive-seeds
 
     delete_by_error:
